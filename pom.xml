@@ -95,6 +95,7 @@
         <module>arc-spring</module>
         <module>arc-springboot</module>
         <module>arc-jvm</module>
+        <module>arc-algorithm</module>
     </modules>
 
     <dependencyManagement>
