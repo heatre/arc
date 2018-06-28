@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>xyz.iguess</groupId>
-    <artifactId>interview</artifactId>
+    <artifactId>arc</artifactId>
     <version>${version}</version>
     <packaging>pom</packaging>
-    <name>interview</name>
-    <description>just for interviewing</description>
+    <name>arc</name>
+    <description>Architect road</description>
     <properties>
         <!--项目发布版本-->
         <version>0.0.1</version>
@@ -91,9 +91,10 @@
     </properties>
 
     <modules>
-
-        <module>interview-java</module>
-        <module>interview-java</module>
+        <module>arc-java</module>
+        <module>arc-spring</module>
+        <module>arc-springboot</module>
+        <module>arc-jvm</module>
     </modules>
 
     <dependencyManagement>
