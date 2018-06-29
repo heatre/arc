@@ -1,4 +1,4 @@
-package arc.spring.di;
+package arc.spring.di.javaconfig;
 
 import arc.spring.di.javaconfig.RabbitConfig;
 import arc.spring.di.javaconfig.Animal;
