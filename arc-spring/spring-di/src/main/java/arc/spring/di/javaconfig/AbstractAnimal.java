@@ -1,5 +1,7 @@
 package arc.spring.di.javaconfig;
 
+import arc.spring.di.domain.Animal;
+import arc.spring.di.domain.Food;
 import arc.tool.PrintUtil;
 
 /**

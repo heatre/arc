@@ -1,4 +1,4 @@
-package arc.spring.di.javaconfig;
+package arc.spring.di.domain;
 
 /**
  * 食物

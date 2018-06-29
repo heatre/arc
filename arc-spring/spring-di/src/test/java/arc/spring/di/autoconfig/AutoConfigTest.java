@@ -1,6 +1,5 @@
-package arc.spring.di.javaconfig;
+package arc.spring.di.autoconfig;
 
-import arc.spring.di.domain.Animal;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,14 +14,14 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @date 2018/6/29
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = RabbitJavaConfig.class)
-public class JavaConfigTest {
+@ContextConfiguration(classes = RabbitAutoConfig.class)
+public class AutoConfigTest {
 
     @Autowired
-    private Animal animal;
+    private RabbitServiceImpl rabbitServiceImpl;
 
     @Test
     public void RabbitTest(){
-        animal.getFeature();
+        rabbitServiceImpl.getFeature();
     }
 }

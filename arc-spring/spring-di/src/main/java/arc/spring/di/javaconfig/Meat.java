@@ -1,5 +1,7 @@
 package arc.spring.di.javaconfig;
 
+import arc.spring.di.domain.Food;
+
 /**
  * 肉类食品
  *

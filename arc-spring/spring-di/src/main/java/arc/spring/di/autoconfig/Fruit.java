@@ -1,6 +1,7 @@
-package arc.spring.di.javaconfig;
+package arc.spring.di.autoconfig;
 
 import arc.spring.di.domain.Food;
+import org.springframework.stereotype.Component;
 
 /**
  * 水果
@@ -9,6 +10,7 @@ import arc.spring.di.domain.Food;
  * @version 1.0
  * @date 2018/6/29
  */
+@Component
 public class Fruit implements Food {
     /**
      * 名称
@@ -19,10 +21,11 @@ public class Fruit implements Food {
      */
     private String place;
 
-    public Fruit(String n,String p){
-        this.name = n;
-        this.place = p;
+    public Fruit(){
+        this.name = "胡萝卜";
+        this.place = "湖南";
     }
+
 
     @Override
     public String getFoodName() {

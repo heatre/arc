@@ -1,5 +1,7 @@
 package arc.spring.di.javaconfig;
 
+import arc.spring.di.domain.Animal;
+import arc.spring.di.domain.Food;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2018/6/29
  */
 @Configuration
-public class RabbitConfig {
+public class RabbitJavaConfig {
 
     @Bean
     public Food getFood() {
