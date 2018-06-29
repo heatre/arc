@@ -96,12 +96,17 @@
         <module>arc-springboot</module>
         <module>arc-jvm</module>
         <module>arc-algorithm</module>
+        <module>arc-tool</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <!--module dependencies-->
-
+            <dependency>
+                <groupId>xyz.iguess</groupId>
+                <artifactId>arc-tool</artifactId>
+                <version>${version}</version>
+            </dependency>
             <!--Spring Boot 依赖-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -326,8 +331,8 @@
             <artifactId>guava</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-logging</artifactId>
+            <groupId>xyz.iguess</groupId>
+            <artifactId>arc-tool</artifactId>
         </dependency>
     </dependencies>
     <build>
