@@ -4,15 +4,18 @@ import arc.spring.di.domain.Animal;
 import arc.spring.di.domain.Food;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 /**
  * 显式配置Rabbit bean
- *
+ * Profile注解声明该配置类在什么环境下生效，要确定那个profile生效需要设置spring.profile.active和spring.profile.default
+ * 两个属性,如果没有上面两个属性都没有配置，则只会创建没有配置在profile注解中的bean
  * @author Swin
  * @version 1.0
  * @date 2018/6/29
  */
 @Configuration
+@Profile("dev")
 public class RabbitJavaConfig {
 
     @Bean(name="fruit")
