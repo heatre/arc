@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @version 1.0
  * @date 2018/6/29
  */
-@Component
+@Component("fruit")
 public class Fruit implements Food {
     /**
      * 名称

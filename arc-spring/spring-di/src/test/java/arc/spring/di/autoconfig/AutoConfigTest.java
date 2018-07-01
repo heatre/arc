@@ -3,20 +3,22 @@ package arc.spring.di.autoconfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import static junit.framework.TestCase.assertNotNull;
 
 /**
- * java 显式配置 bean 测试
+ * 自动扫描测试类
  *
  * @author Swin
  * @version 1.0
  * @date 2018/6/29
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = RabbitAutoConfig.class)
+@ContextConfiguration(classes = RootConfig.class)
+@ActiveProfiles("dev")
 public class AutoConfigTest {
 
     @Autowired
