@@ -1,7 +1,6 @@
 package arc.spring.di.autoconfig;
 
 import arc.spring.di.domain.Animal;
-import org.springframework.stereotype.Component;
 
 /**
  * 动物
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Component;
  * @version 1.0
  * @date 2018/6/29
  */
-@Component
-public interface RabbitService extends Animal {
+public interface Rabbit extends Animal {
 
 }

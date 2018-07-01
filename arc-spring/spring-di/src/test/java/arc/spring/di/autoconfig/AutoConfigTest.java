@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import static junit.framework.TestCase.assertNotNull;
+
 /**
  * java 显式配置 bean 测试
  *
@@ -18,10 +20,15 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class AutoConfigTest {
 
     @Autowired
-    private RabbitServiceImpl rabbitServiceImpl;
+    private Rabbit rabbit;
+
+    @Test
+    public void notNullTest(){
+        assertNotNull(rabbit);
+    }
 
     @Test
     public void RabbitTest(){
-        rabbitServiceImpl.getFeature();
+        rabbit.getFeature();
     }
 }
