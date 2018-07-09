@@ -22,8 +22,6 @@ public class Fruit implements Food {
     private String place;
 
     public Fruit(){
-        this.name = "胡萝卜";
-        this.place = "湖南";
     }
 
 

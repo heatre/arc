@@ -3,13 +3,14 @@ package arc.spring.di.autoconfig;
 import arc.spring.di.domain.Food;
 import arc.tool.PrintUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Component;
 
 /**
  * 兔子实现类
- * ExistsCondition类满足条件时才会创建bean
- *
+ * "@Conditional"表示ExistsCondition类满足条件时才会创建bean
+ * "@Qualifier"限定装配bean具体类型
  * @author Swin
  * @version 1.0
  * @date 2018/6/29
@@ -31,6 +32,7 @@ public class RabbitImpl implements Rabbit {
     /**
      * 饮食
      */
+    @Qualifier("apple")
     private Food food;
 
     /**
@@ -60,7 +62,7 @@ public class RabbitImpl implements Rabbit {
      * @param food
      */
     @Autowired
-    public RabbitImpl(Fruit food) {
+    public RabbitImpl(Food food) {
         this.food = food;
     }
 
