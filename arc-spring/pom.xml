@@ -12,13 +12,10 @@
     <artifactId>arc-spring</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-bean</module>
-        <module>spring-context</module>
-        <module>spring-core</module>
+        <module>spring-component</module>
         <module>spring-di</module>
         <module>spring-aop</module>
         <module>spring-webmvc</module>
     </modules>
-
 
 </project>
