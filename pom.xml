@@ -6,7 +6,7 @@
 
     <groupId>xyz.iguess</groupId>
     <artifactId>arc</artifactId>
-    <version>${version}</version>
+    <version>0.0.1</version>
     <packaging>pom</packaging>
     <name>arc</name>
     <description>Architect road</description>
@@ -330,10 +330,6 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
         </dependency>
-        <dependency>
-            <groupId>xyz.iguess</groupId>
-            <artifactId>arc-tool</artifactId>
-        </dependency>
     </dependencies>
     <build>
         <pluginManagement>
@@ -350,10 +346,31 @@
                     <configuration>
                         <source>1.8</source>
                         <target>1.8</target>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.21.0</version>
+                    <configuration>
+                        <forkMode>once</forkMode>
+                        <argLine>-Dfile.encoding=UTF-8</argLine>
                     </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+        </plugins>
 
     </build>
 
