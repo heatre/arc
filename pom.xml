@@ -77,11 +77,11 @@
         <!--工具类库依赖-->
         <commons-codec.version>1.11</commons-codec.version>
         <commons-lang3.version>3.7</commons-lang3.version>
+        <commons-collections.version>4.1</commons-collections.version>
         <guava.version>24.0-jre</guava.version>
         <commons-codec.version>1.11</commons-codec.version>
         <commons-io.version>1.3.2</commons-io.version>
         <commons-fileupload.version>1.3.2</commons-fileupload.version>
-        <commons-collections.version>3.2.2</commons-collections.version>
 
         <!--plugins-->
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
@@ -190,6 +190,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons-collections.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -330,6 +335,14 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>xyz.iguess</groupId>
+            <artifactId>arc-tool</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <pluginManagement>
@@ -373,7 +386,6 @@
         </plugins>
 
     </build>
-
 
 
 </project>

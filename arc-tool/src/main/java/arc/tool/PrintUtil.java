@@ -15,4 +15,8 @@ public class PrintUtil {
     public static void print(Object str){
         System.out.println(str.toString());
     }
+
+    public static void print() {
+        System.out.println("wait");
+    }
 }
