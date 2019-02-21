@@ -49,7 +49,7 @@ public class ThreadTest {
         public Integer call() throws Exception {
             Thread.sleep(5000);
             PrintUtil.print("callable task");
-            return new Integer(1);
+            return Integer.valueOf(1);
         }
     }
 
