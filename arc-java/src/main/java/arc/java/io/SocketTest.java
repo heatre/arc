@@ -17,7 +17,7 @@ import java.net.URL;
 public class SocketTest {
 
     public static void main(String[] args) throws Exception{
-        URL url = new URL("http://127.0.0.1:8888");
+        URL url = new URL("http://www.baidu.com");
         InputStream is = url.openStream();
         InputStreamReader isr = new InputStreamReader(is, "utf-8");
         BufferedReader br = new BufferedReader(isr);
