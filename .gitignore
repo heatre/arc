@@ -2,3 +2,4 @@
 *.iml
 *.log
 target
+/arc-algorithm/data/
