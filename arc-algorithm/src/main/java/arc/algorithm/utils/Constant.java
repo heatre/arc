@@ -6,5 +6,5 @@ package arc.algorithm.utils;
  */
 public class Constant {
     public static final String CURRENT_DIR = System.getProperty("user.dir");
-    public static final String DATA_DIR = CURRENT_DIR+"/Algorithms/data/";
+    public static final String DATA_DIR = CURRENT_DIR+"/arc-algorithm/data/";
 }

@@ -2,7 +2,8 @@ package arc.algorithm.fundamentals;
 
 /**
  * 全排列算法
- *
+ * 全排列可以看做固定前i位，对第i+1位之后的再进行全排列，比如固定第一位，后面跟着n-1位的全排列。
+ * 那么解决n-1位元素的全排列就能解决n位元素的全排列了，这样的设计很容易就能用递归实现。
  * @author Mustache Zhang
  * @version 1.0
  * @date 2019/3/24

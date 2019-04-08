@@ -126,7 +126,7 @@ public class RedBlackTreeST<Key extends Comparable<Key>, Val> {
         if(node == null) {
             return false;
         }
-        return node.color;
+        return node.color==RED;
     }
 
     public void flipColor(Node node){
@@ -313,7 +313,7 @@ public class RedBlackTreeST<Key extends Comparable<Key>, Val> {
         if(isRed(node.right) && !isRed(node.left)) {
             rotateLeft(node);
         }
-        if(isRed(node.right) && isRed(node.left)) {
+        if(isRed(node.left) && isRed(node.left.left)) {
             rotateLeft(node.right);
         }
         if(isRed(node.left) && isRed(node.right)) {
