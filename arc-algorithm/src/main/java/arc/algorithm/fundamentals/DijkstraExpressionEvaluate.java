@@ -1,7 +1,7 @@
 package arc.algorithm.fundamentals;
 
 
-import arc.algorithm.utils.StringUtils;
+import arc.algorithm.StringUtils;
 import arc.tool.PrintUtil;
 
 import java.util.Stack;

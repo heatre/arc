@@ -48,5 +48,10 @@ public class ExecutorTest {
 
         }
         executor.shutdown();
+
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        ExecutorService executorService1 = Executors.newCachedThreadPool();
+        ExecutorService executorService2 = Executors.newSingleThreadExecutor();
+        ExecutorService executorService3 = Executors.newScheduledThreadPool(10);
     }
 }

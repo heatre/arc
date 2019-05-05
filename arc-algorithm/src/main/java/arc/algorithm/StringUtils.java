@@ -1,4 +1,4 @@
-package arc.algorithm.utils;
+package arc.algorithm;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
